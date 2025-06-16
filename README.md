@@ -6,6 +6,9 @@ np.random.seed(0)
 # Create array
 array = np.random.randint(1, 51, size=(5, 4))
 print("Original Array:\n", array)
+
+
+# Extract the Anti-Diagonal Elements 
 anti_diagonal = [array[i, -i-1] for i in range(min(array.shape))]
 print("Anti-diagonal Elements:", anti_diagonal)
 
